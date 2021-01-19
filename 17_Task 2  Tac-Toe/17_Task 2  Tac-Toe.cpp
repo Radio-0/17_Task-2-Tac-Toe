@@ -39,7 +39,7 @@ int main()
 			}
 			else field[line][column] = 'o';
 		}
-		else {
+		else if(line > 2 || line < 0 || column > 2 || column < 0){
 			std::cout << "Enter OTHER coordinates." << "\n";
 			continue;
 		}
